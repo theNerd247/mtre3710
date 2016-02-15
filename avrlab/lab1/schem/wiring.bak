@@ -1,0 +1,226 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:wiring-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Lab1 ATMega328p 7-Segment Display"
+Date "19 jan 2016"
+Rev ""
+Comp "Mechatronics Fundamentals"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATMEGA328-P IC1
+U 1 1 569D5E0B
+P 4300 4050
+F 0 "IC1" H 3550 5300 40  0000 L BNN
+F 1 "ATMEGA328-P" H 4700 2650 40  0000 L BNN
+F 2 "DIL28" H 4300 4050 30  0000 C CIN
+F 3 "~" H 4300 4050 60  0000 C CNN
+	1    4300 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L DC04-11 AFF?
+U 1 1 569D6304
+P 7650 3350
+F 0 "AFF?" H 7650 3850 60  0000 C CNN
+F 1 "DC04-11" H 7650 2900 60  0000 C CNN
+F 2 "" H 7650 3350 60  0000 C CNN
+F 3 "" H 7650 3350 60  0000 C CNN
+	1    7650 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 569D6608
+P 5900 4550
+F 0 "R1" V 5950 4350 40  0000 C CNN
+F 1 "150" V 5907 4551 40  0000 C CNN
+F 2 "~" V 5830 4550 30  0000 C CNN
+F 3 "~" H 5900 4550 30  0000 C CNN
+	1    5900 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R2
+U 1 1 569D660E
+P 5900 4650
+F 0 "R2" V 5950 4450 40  0000 C CNN
+F 1 "150" V 5907 4651 40  0000 C CNN
+F 2 "~" V 5830 4650 30  0000 C CNN
+F 3 "~" H 5900 4650 30  0000 C CNN
+	1    5900 4650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R3
+U 1 1 569D665C
+P 5900 4750
+F 0 "R3" V 5950 4550 40  0000 C CNN
+F 1 "150" V 5907 4751 40  0000 C CNN
+F 2 "~" V 5830 4750 30  0000 C CNN
+F 3 "~" H 5900 4750 30  0000 C CNN
+	1    5900 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R4
+U 1 1 569D6662
+P 5900 4850
+F 0 "R4" V 5950 4650 40  0000 C CNN
+F 1 "150" V 5907 4851 40  0000 C CNN
+F 2 "~" V 5830 4850 30  0000 C CNN
+F 3 "~" H 5900 4850 30  0000 C CNN
+	1    5900 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R5
+U 1 1 569D6668
+P 5900 4950
+F 0 "R5" V 5950 4750 40  0000 C CNN
+F 1 "150" V 5907 4951 40  0000 C CNN
+F 2 "~" V 5830 4950 30  0000 C CNN
+F 3 "~" H 5900 4950 30  0000 C CNN
+	1    5900 4950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R6
+U 1 1 569D666E
+P 5900 5050
+F 0 "R6" V 5950 4850 40  0000 C CNN
+F 1 "150" V 5907 5051 40  0000 C CNN
+F 2 "~" V 5830 5050 30  0000 C CNN
+F 3 "~" H 5900 5050 30  0000 C CNN
+	1    5900 5050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R7
+U 1 1 569D6674
+P 5900 5150
+F 0 "R7" V 5950 4950 40  0000 C CNN
+F 1 "150" V 5907 5151 40  0000 C CNN
+F 2 "~" V 5830 5150 30  0000 C CNN
+F 3 "~" H 5900 5150 30  0000 C CNN
+	1    5900 5150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2900 5250 3400 5250
+Wire Wire Line
+	3150 5250 3150 5150
+Wire Wire Line
+	3150 2950 3400 2950
+Wire Wire Line
+	5300 3800 6100 3800
+Wire Wire Line
+	6100 3800 6100 2950
+Wire Wire Line
+	6100 2950 6800 2950
+Wire Wire Line
+	5300 4550 5650 4550
+Wire Wire Line
+	5300 4650 5650 4650
+Wire Wire Line
+	5650 4750 5300 4750
+Wire Wire Line
+	5300 4850 5650 4850
+Wire Wire Line
+	5300 4950 5650 4950
+Wire Wire Line
+	5300 5050 5650 5050
+Wire Wire Line
+	5300 5150 5650 5150
+Wire Wire Line
+	6800 3050 6200 3050
+Wire Wire Line
+	6200 3050 6200 4550
+Wire Wire Line
+	6800 3150 6300 3150
+Wire Wire Line
+	6300 3150 6300 4650
+Wire Wire Line
+	6300 4650 6150 4650
+Wire Wire Line
+	6800 3250 6400 3250
+Wire Wire Line
+	6400 3250 6400 4750
+Wire Wire Line
+	6400 4750 6150 4750
+Wire Wire Line
+	6800 3350 6500 3350
+Wire Wire Line
+	6500 3350 6500 4850
+Wire Wire Line
+	6500 4850 6150 4850
+Wire Wire Line
+	6800 3450 6600 3450
+Wire Wire Line
+	6600 3450 6600 4950
+Wire Wire Line
+	6600 4950 6150 4950
+Wire Wire Line
+	6800 3550 6700 3550
+Wire Wire Line
+	6700 3550 6700 5050
+Wire Wire Line
+	6700 5050 6150 5050
+Wire Wire Line
+	6800 3650 6800 5150
+Wire Wire Line
+	6800 5150 6150 5150
+Connection ~ 6200 4550
+Connection ~ 6300 4650
+Connection ~ 6400 4750
+Connection ~ 6500 4850
+Connection ~ 6600 4950
+Connection ~ 6700 5050
+Connection ~ 6800 5150
+Wire Wire Line
+	6200 4550 6150 4550
+Wire Wire Line
+	3150 5150 3400 5150
+Connection ~ 3150 5250
+Text GLabel 3150 2950 0    60   Input ~ 0
+VCC Power Rail
+Text GLabel 2900 5250 0    60   Input ~ 0
+GND Power Rail
+$EndSCHEMATC

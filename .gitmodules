@@ -1,0 +1,11 @@
+[submodule "cmake/arcb"]
+	path = cmake/arcb
+	branch = cmake-avr
+	url = https://github.com/theNerd247/arcb.git
+[submodule "cmake/modulartex"]
+	path = cmake/modulartex
+	url = https://github.com/theNerd247/modulartex.git
+[submodule "cmake/cmake-avr"]
+	path = cmake/cmake-avr
+	branch = avr
+	url = https://github.com/theNerd247/cmake-var.git

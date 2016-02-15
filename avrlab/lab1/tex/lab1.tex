@@ -1,0 +1,79 @@
+\documentclass[main.tex]{subfile}
+
+\begin{document}
+
+\section{Materials}
+\label{sub:materials}
+
+Below are the materials you'll need for all of the microcontroller labs.
+
+\begin{itemize}
+	\item ATMega329p
+	\item Pololu USB AVR Programmer
+	\item Wiring Kit
+	\item Two-Digit 7-Segment Display
+	\item 7 pin resistor pack.
+	\item 2 Bread boards
+	\item $1k \Omega$ and $1.5k \Omega$ resistors
+	\item 2 $100 \eta F$ capacitors
+	\item $100 \mu H$ inductor
+	\item TMP36 tempurature sensor
+	\item 6 pin male-female header
+\end{itemize}
+
+% section materials (end)
+
+\section{Wiring} 
+\label{sec:wiring}
+
+\subsection{Programmer}
+\label{sub:programmer}
+
+To wire the ISP programmer use the 6 pin header - see \figref{programmerDia}.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\linewidth]{progammerDiagram}
+	\end{center}
+	\caption{Wiring Diagram for the programmer}
+	\label{fig:programmerDia}
+\end{figure}
+
+% subsection programmer (end)
+
+\subsection{Wiring the 7 Segment Display}
+\label{sub:wiring_the_7_segment_display}
+
+% subsection wiring_the_7_segment_display (end)
+
+Use \figref{wiringDia} to wire your 7-segment display. Note you'll only need to
+wire digit 1 of the display for this lab. Next week you'll wire digit 2.
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=\linewidth]{7segWiring}
+	\end{center}
+	\caption{Wiring the 7-Segment Display: Note use the resistor pack for the resistors.}
+	\label{fig:wiringDia}
+\end{figure}
+
+% section wiring (end)
+
+\section{Programming} 
+\label{sec:programming}
+
+The goal of your program is to get the 7 segment display to count up from $0$ to
+$9$ - this way you can confirm that your display works for all digits.
+
+A simple way to do this is to create a function that will take a number and
+display it on the 7-segment display by using the GPIO pins. For now just have
+this function display the $1$'s place digit on the seven segment display. (Hint: use a
+hard coded table to map GPIO outputs to the segments on the display with digits).
+
+Use the documentation for the avrlibc to lookup the variable names of pins and
+registers and the datasheet for the ATMega329p to determine the values to use
+when setting the registers.
+
+% section programming (end)
+
+\end{document}

@@ -1,0 +1,2 @@
+lab1/img filter=lfs diff=lfs merge=lfs -text
+lab1/schem filter=lfs diff=lfs merge=lfs -text

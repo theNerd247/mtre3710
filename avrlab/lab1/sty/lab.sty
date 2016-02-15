@@ -1,0 +1,37 @@
+\ProvidesPackage{lab}
+
+\usepackage{url}
+\usepackage[cm]{fullpage}
+% allow src code implemetation
+\usepackage{listings}
+% needed for images
+\usepackage{graphicx}
+% all images should be placed in figures/
+%\graphicspath{{./figures/}}
+% enable more control of floats
+\usepackage{float}
+% custom reference styles
+\usepackage{refstyle}
+\newref{fig}{refcmd={Figure~\ref{#1}}}
+\newref{tab}{refcmd={Table~\ref{#1}}}
+\newref{gph}{refcmd={Graph~\ref{#1}}}
+\newref{sec}{refcmd={Section~\ref{#1}}}
+% use good tables
+\usepackage{tabularx}
+\usepackage{booktabs}
+% use math
+\usepackage{amsmath}
+\usepackage{amssymb}
+% allow CSV processing
+\usepackage{csvsimple}
+
+\newcommand{\labTitle}[1]{
+	\title{Microcontroller Lab #1}
+	\author{
+		Noah Harvey
+		\\ \texttt{nharvey6@students.kennesaw.edu}
+	}
+	\maketitle
+}
+
+\endinput

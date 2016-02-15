@@ -1,0 +1,32 @@
+\documentclass[main.tex]{subfile}
+
+\begin{document}
+
+\section{Wiring} 
+\label{sec:wiring}
+
+Wire the TMP36 according to \figref{tmp36Dia}.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\linewidth]{tmp36Diagram}
+	\end{center}
+	\caption{Wiring Diagram for the TMP36}
+	\label{fig:tmp36Dia}
+\end{figure}
+
+% section wiring (end)
+
+\section{Programming} 
+\label{sec:programming}
+
+Modify your program from the previous lab to display the temperature from the
+TMP36 on the 7 segment display. You'll need to create an interrupt service
+routine (ISR) to get the temperature from the ADC. See the datasheet for the
+Atmega328P for details on how to setup the ADC.
+
+% section programming (end)
+
+% document text goes here
+
+\end{document}
