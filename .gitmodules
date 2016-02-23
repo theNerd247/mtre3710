@@ -8,4 +8,4 @@
 [submodule "cmake/cmake-avr"]
 	path = cmake/cmake-avr
 	branch = avr
-	url = https://github.com/theNerd247/cmake-var.git
+	url = https://github.com/theNerd247/cmake-avr.git
