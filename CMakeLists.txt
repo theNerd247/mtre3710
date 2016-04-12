@@ -14,11 +14,12 @@ set(MODULARTEX_MODULE_PATH
 set(CMAKE_MODULE_PATH 
 	${CMAKE_MODULE_PATH} 
 	${ARCB_MODULE_PATH}
+	"${PROJECT_SOURCE_DIR}/cmake/"
 	${MODULARTEX_MODULE_PATH}
 	)
 
 set(projects 
-	"avrlab"
+	"AriaTest"
 	)
 
 foreach(p ${projects})
