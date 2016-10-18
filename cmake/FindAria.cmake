@@ -17,7 +17,7 @@ if(WIN32)
 else(WIN32)
 	#Linux install path
 	set(AriaInstallPath "/usr/local/Aria")
-	set(libList "dl" "pthread" "Aria")
+	set(libList "Aria" "dl" "pthread")
 endif(WIN32)
 
 #if the environment variable sets the aria installation path then use that.
